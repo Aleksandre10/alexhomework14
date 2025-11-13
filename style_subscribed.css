@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+body {
+  background-color: rgba(54, 56, 77, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Roboto-Regular;
+}
+.container {
+  width: 504px;
+  height: 520px;
+  border-radius: 36px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+}
+.subcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.checkmark {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: rgba(36, 39, 66, 1);
+  font-family: Roboto-Bold;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: rgba(36, 39, 66, 0.8);
+}
+
+span {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: rgba(36, 39, 66, 1);
+  font-family: Roboto-Bold;
+}
+.link {
+  width: 376px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: rgba(36, 39, 66, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  font-family: Roboto-Bold;
+}
+.link:hover {
+  background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .container {
+    box-shadow: none;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .link {
+    width: 327px;
+  }
+}
