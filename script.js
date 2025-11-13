@@ -25,10 +25,10 @@ if (number3 === 0) {
   console.log("რიცხვი დადებითია");
 }
 
-let lenght = 10
+let length = 10
 let width = 12
 
-let perimeter = 2 * ( lenght + width)
+let perimeter = 2 * ( length + width)
 
 if (perimeter > 50) {
     console.log("პერიმეტრი არის 50-ზე მეტი");
